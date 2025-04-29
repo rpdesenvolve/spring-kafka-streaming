@@ -1,0 +1,16 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: consumer
+
+Spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: books-consumer-group
+
+topic:
+  name:
+    consumer: books

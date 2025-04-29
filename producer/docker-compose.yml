@@ -1,0 +1,15 @@
+services:
+  oracle:
+    image: oracle/database:latest
+    container_name: oracle
+    environment:
+      - ORACLE_PWD=oracle
+      - ORACLE_CHARACTERSET=AL32UTF8
+      - ORACLE_SID=orclpdb
+      - ORACLE_PDB=orclpdb1
+      - ORACLE_UNQNAME=orclpdb
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    volumes:
+      - ./oracle:/opt/oracle/oradata
