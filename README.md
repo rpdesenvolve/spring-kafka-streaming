@@ -30,7 +30,7 @@
    ```bash
    docker-compose up -d
    ```
-3. Build Java the application
+3. Build Java the application (Producer and Consumer)
 4. Send a request to the application
    ```bash
    curl -X GET http://localhost:8080/api/book
